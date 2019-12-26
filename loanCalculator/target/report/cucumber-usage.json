@@ -1,0 +1,192 @@
+[
+  {
+    "source": "^All the fields gets cleared$",
+    "steps": [
+      {
+        "name": "All the fields gets cleared",
+        "aggregatedDurations": {
+          "average": 1.053844903,
+          "median": 1.053844903
+        },
+        "durations": [
+          {
+            "duration": 1.053844903,
+            "location": "borrowingCalculator.feature:26"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill only living expenses \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I fill only living expenses \"1\"",
+        "aggregatedDurations": {
+          "average": 0.131808784,
+          "median": 0.131808784
+        },
+        "durations": [
+          {
+            "duration": 0.131808784,
+            "location": "borrowingCalculator.feature:34"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill my details \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I fill my details \"Single\" \"0\" \"Live\"",
+        "aggregatedDurations": {
+          "average": 1.127547181,
+          "median": 1.127547181
+        },
+        "durations": [
+          {
+            "duration": 1.127547181,
+            "location": "borrowingCalculator.feature:9"
+          }
+        ]
+      },
+      {
+        "name": "I fill my details \"Joint\" \"2\" \"Investment\"",
+        "aggregatedDurations": {
+          "average": 0.602571258,
+          "median": 0.602571258
+        },
+        "durations": [
+          {
+            "duration": 0.602571258,
+            "location": "borrowingCalculator.feature:21"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill my expenses \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I fill my expenses \"500\" \"0\" \"100\" \"0\" \"10000\"",
+        "aggregatedDurations": {
+          "average": 1.039682648,
+          "median": 1.039682648
+        },
+        "durations": [
+          {
+            "duration": 1.039682648,
+            "location": "borrowingCalculator.feature:11"
+          }
+        ]
+      },
+      {
+        "name": "I fill my expenses \"500\" \"100\" \"100\" \"100\" \"10000\"",
+        "aggregatedDurations": {
+          "average": 1.150810929,
+          "median": 1.150810929
+        },
+        "durations": [
+          {
+            "duration": 1.150810929,
+            "location": "borrowingCalculator.feature:23"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am in borrowing calculator page$",
+    "steps": [
+      {
+        "name": "I am in borrowing calculator page",
+        "aggregatedDurations": {
+          "average": 28.574606307,
+          "median": 8.566744856
+        },
+        "durations": [
+          {
+            "duration": 72.604034312,
+            "location": "borrowingCalculator.feature:8"
+          },
+          {
+            "duration": 4.553039753,
+            "location": "borrowingCalculator.feature:20"
+          },
+          {
+            "duration": 8.566744856,
+            "location": "borrowingCalculator.feature:33"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I fill my earnings details \"([^\"]*)\" \"([^\"]*)\"$",
+    "steps": [
+      {
+        "name": "I fill my earnings details \"80000\" \"10000\"",
+        "aggregatedDurations": {
+          "average": 1.684652706,
+          "median": 1.684652706
+        },
+        "durations": [
+          {
+            "duration": 2.126644009,
+            "location": "borrowingCalculator.feature:10"
+          },
+          {
+            "duration": 1.242661404,
+            "location": "borrowingCalculator.feature:22"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on start over button$",
+    "steps": [
+      {
+        "name": "I click on start over button",
+        "aggregatedDurations": {
+          "average": 0.315116792,
+          "median": 0.315116792
+        },
+        "durations": [
+          {
+            "duration": 0.315116792,
+            "location": "borrowingCalculator.feature:25"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I click on work out borrow button$",
+    "steps": [
+      {
+        "name": "I click on work out borrow button",
+        "aggregatedDurations": {
+          "average": 0.311132132,
+          "median": 0.157428913
+        },
+        "durations": [
+          {
+            "duration": 0.157428913,
+            "location": "borrowingCalculator.feature:12"
+          },
+          {
+            "duration": 0.625660364,
+            "location": "borrowingCalculator.feature:24"
+          },
+          {
+            "duration": 0.150307121,
+            "location": "borrowingCalculator.feature:35"
+          }
+        ]
+      }
+    ]
+  }
+]

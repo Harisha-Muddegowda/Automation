@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="99.227124">
+<testcase classname="Borrowing calculator" name="I want to estimate how much I may be able to borrow based on my current income and existing financial commitments" time="80.267652">
+<failure message="java.lang.NumberFormatException: For input string: &quot;&quot;&#13;&#10;&#9;at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)&#13;&#10;&#9;at java.lang.Integer.parseInt(Integer.java:592)&#13;&#10;&#9;at java.lang.Integer.parseInt(Integer.java:615)&#13;&#10;&#9;at step_definations.CalculateBorrowing.i_should_get_borrowing_estimate_of(CalculateBorrowing.java:63)&#13;&#10;&#9;at ✽.Then I should get borrowing estimate of &quot;479000&quot;(borrowingCalculator.feature:13)&#13;&#10;"><![CDATA[Given I am in borrowing calculator page.....................................passed
+When I fill my details "Single" "0" "Live"..................................passed
+And I fill my earnings details "80000" "10000"..............................passed
+And I fill my expenses "500" "0" "100" "0" "10000"..........................passed
+And I click on work out borrow button.......................................passed
+Then I should get borrowing estimate of "479000"............................failed
+
+StackTrace:
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at step_definations.CalculateBorrowing.i_should_get_borrowing_estimate_of(CalculateBorrowing.java:63)
+	at ✽.Then I should get borrowing estimate of "479000"(borrowingCalculator.feature:13)
+]]></failure>
+</testcase>
+<testcase classname="Borrowing calculator" name="I want to clear all the entered loan details" time="9.548134">
+<system-out><![CDATA[Given I am in borrowing calculator page.....................................passed
+When I fill my details "Joint" "2" "Investment".............................passed
+And I fill my earnings details "80000" "10000"..............................passed
+And I fill my expenses "500" "100" "100" "100" "10000"......................passed
+And I click on work out borrow button.......................................passed
+And I click on start over button............................................passed
+Then All the fields gets cleared............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Borrowing calculator" name="I want to estimate borrow by filling only living expenses and leaving all other fields as zero" time="9.411338">
+<failure message="java.lang.AssertionError: Proper error message is not displayed&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at step_definations.CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message(CalculateBorrowing.java:113)&#13;&#10;&#9;at ✽.Then I should not get estimation and get valid proper error message(borrowingCalculator.feature:36)&#13;&#10;"><![CDATA[Given I am in borrowing calculator page.....................................passed
+And I fill only living expenses "1".........................................passed
+And I click on work out borrow button.......................................passed
+Then I should not get estimation and get valid proper error message.........failed
+
+StackTrace:
+java.lang.AssertionError: Proper error message is not displayed
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at step_definations.CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message(CalculateBorrowing.java:113)
+	at ✽.Then I should not get estimation and get valid proper error message(borrowingCalculator.feature:36)
+]]></failure>
+</testcase>
+</testsuite>

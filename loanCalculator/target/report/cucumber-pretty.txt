@@ -1,0 +1,72 @@
+#Author: Harisha M
+#Version 1.0
+@Clalculate
+Feature: Borrowing calculator
+
+  Scenario Outline: I want to estimate how much I may be able to borrow based on my current income and existing financial commitments [90m# borrowingCalculator.feature:7[0m
+    [36mGiven [0m[36mI am in borrowing calculator page[0m
+    [36mWhen [0m[36mI fill my details "<Applicant_Type>" "<Dependants>" "<Purpose_Of_Buy>"[0m
+    [36mAnd [0m[36mI fill my earnings details "<Income>" "<Other_Income>"[0m
+    [36mAnd [0m[36mI fill my expenses "<Expense>" "<Home_Loan_Repayment>" "<Other_Loan_Payment>" "<Commitments>" "<CreditCard_Limit>"[0m
+    [36mAnd [0m[36mI click on work out borrow button[0m
+    [36mThen [0m[36mI should get borrowing estimate of "<Estimate>"[0m
+
+    Examples: 
+
+  @Clalculate
+  Scenario Outline: I want to estimate how much I may be able to borrow based on my current income and existing financial commitments [90m# borrowingCalculator.feature:17[0m
+    [32mGiven [0m[32mI am in borrowing calculator page[0m                                                                                           [90m# CalculateBorrowing.i_am_in_borrowing_calculator_page()[0m
+    [32mWhen [0m[32mI fill my details "[0m[32m[1mSingle[0m[32m" "[0m[32m[1m0[0m[32m" "[0m[32m[1mLive[0m[32m"[0m                                                                                        [90m# CalculateBorrowing.i_fill_my_details_something_something_something(String,int,String)[0m
+    [32mAnd [0m[32mI fill my earnings details "[0m[32m[1m80000[0m[32m" "[0m[32m[1m10000[0m[32m"[0m                                                                                    [90m# CalculateBorrowing.i_fill_my_earnings_details_something_something(int,int)[0m
+    [32mAnd [0m[32mI fill my expenses "[0m[32m[1m500[0m[32m" "[0m[32m[1m0[0m[32m" "[0m[32m[1m100[0m[32m" "[0m[32m[1m0[0m[32m" "[0m[32m[1m10000[0m[32m"[0m                                                                                [90m# CalculateBorrowing.i_fill_my_expenses_something_something_something_something_something(int,int,int,int,int)[0m
+    [32mAnd [0m[32mI click on work out borrow button[0m                                                                                             [90m# CalculateBorrowing.i_click_on_work_out_borrow_button()[0m
+    [31mThen [0m[31mI should get borrowing estimate of "[0m[31m[1m479000[0m[31m"[0m                                                                                  [90m# CalculateBorrowing.i_should_get_borrowing_estimate_of(int)[0m
+      [31mjava.lang.NumberFormatException: For input string: ""
+      	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+      	at java.lang.Integer.parseInt(Integer.java:592)
+      	at java.lang.Integer.parseInt(Integer.java:615)
+      	at step_definations.CalculateBorrowing.i_should_get_borrowing_estimate_of(CalculateBorrowing.java:63)
+      	at ✽.Then I should get borrowing estimate of "479000"(borrowingCalculator.feature:13)
+      [0m
+
+  Scenario Outline: I want to clear all the entered loan details                                                           [90m# borrowingCalculator.feature:19[0m
+    [36mGiven [0m[36mI am in borrowing calculator page[0m
+    [36mWhen [0m[36mI fill my details "<Applicant_Type>" "<Dependants>" "<Purpose_Of_Buy>"[0m
+    [36mAnd [0m[36mI fill my earnings details "<Income>" "<Other_Income>"[0m
+    [36mAnd [0m[36mI fill my expenses "<Expense>" "<Home_Loan_Repayment>" "<Other_Loan_Payment>" "<Commitments>" "<CreditCard_Limit>"[0m
+    [36mAnd [0m[36mI click on work out borrow button[0m
+    [36mAnd [0m[36mI click on start over button[0m
+    [36mThen [0m[36mAll the fields gets cleared[0m
+
+    Examples: 
+
+  @Clalculate
+  Scenario Outline: I want to clear all the entered loan details [90m# borrowingCalculator.feature:30[0m
+    [32mGiven [0m[32mI am in borrowing calculator page[0m                      [90m# CalculateBorrowing.i_am_in_borrowing_calculator_page()[0m
+    [32mWhen [0m[32mI fill my details "[0m[32m[1mJoint[0m[32m" "[0m[32m[1m2[0m[32m" "[0m[32m[1mInvestment[0m[32m"[0m              [90m# CalculateBorrowing.i_fill_my_details_something_something_something(String,int,String)[0m
+    [32mAnd [0m[32mI fill my earnings details "[0m[32m[1m80000[0m[32m" "[0m[32m[1m10000[0m[32m"[0m               [90m# CalculateBorrowing.i_fill_my_earnings_details_something_something(int,int)[0m
+    [32mAnd [0m[32mI fill my expenses "[0m[32m[1m500[0m[32m" "[0m[32m[1m100[0m[32m" "[0m[32m[1m100[0m[32m" "[0m[32m[1m100[0m[32m" "[0m[32m[1m10000[0m[32m"[0m       [90m# CalculateBorrowing.i_fill_my_expenses_something_something_something_something_something(int,int,int,int,int)[0m
+    [32mAnd [0m[32mI click on work out borrow button[0m                        [90m# CalculateBorrowing.i_click_on_work_out_borrow_button()[0m
+    [32mAnd [0m[32mI click on start over button[0m                             [90m# CalculateBorrowing.i_click_on_start_over_button()[0m
+    [32mThen [0m[32mAll the fields gets cleared[0m                             [90m# CalculateBorrowing.all_the_fields_gets_cleared()[0m
+
+  Scenario Outline: I want to estimate borrow by filling only living expenses and leaving all other fields as zero [90m# borrowingCalculator.feature:32[0m
+    [36mGiven [0m[36mI am in borrowing calculator page[0m
+    [36mAnd [0m[36mI fill only living expenses "<Expense>"[0m
+    [36mAnd [0m[36mI click on work out borrow button[0m
+    [36mThen [0m[36mI should not get estimation and get valid proper error message[0m
+
+    Examples: 
+
+  @Clalculate
+  Scenario Outline: I want to estimate borrow by filling only living expenses and leaving all other fields as zero [90m# borrowingCalculator.feature:40[0m
+    [32mGiven [0m[32mI am in borrowing calculator page[0m                                                                        [90m# CalculateBorrowing.i_am_in_borrowing_calculator_page()[0m
+    [32mAnd [0m[32mI fill only living expenses "[0m[32m[1m1[0m[32m"[0m                                                                            [90m# CalculateBorrowing.i_fill_only_living_expenses_something(int)[0m
+    [32mAnd [0m[32mI click on work out borrow button[0m                                                                          [90m# CalculateBorrowing.i_click_on_work_out_borrow_button()[0m
+    [31mThen [0m[31mI should not get estimation and get valid proper error message[0m                                            [90m# CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message()[0m
+      [31mjava.lang.AssertionError: Proper error message is not displayed
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at step_definations.CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message(CalculateBorrowing.java:113)
+      	at ✽.Then I should not get estimation and get valid proper error message(borrowingCalculator.feature:36)
+      [0m

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: test_runner.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 194.275 sec <<< FAILURE! - in test_runner.RunnerTest
+Then I should get borrowing estimate of "479000"(| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NumberFormatException: For input string: ""
+
+| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NumberFormatException: For input string: ""
+
+Then I should not get estimation and get valid proper error message(| 1 |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Proper error message is not displayed
+
+| 1 |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Proper error message is not displayed
+
