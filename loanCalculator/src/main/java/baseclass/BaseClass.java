@@ -1,3 +1,11 @@
+/**
+ * This base class contains the common functions which are required for all the scripts
+ *
+ * @Author: Harisha M
+ * @version 1.0
+ * @Date   27-12-2019
+ */
+
 package baseclass;
 
 import cucumber.api.Scenario;
@@ -9,7 +17,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,6 +31,10 @@ public class BaseClass {
     public static Boolean isBrowserOpened = false;
     public static Logger log;
 
+    /**
+     * This method is used to initialize logging and property file
+     * @throws IOException
+     */
     public static void initialize() throws IOException {
         if(!isInitialized){
             log = Logger.getLogger(BaseClass.class.getName());
@@ -35,6 +46,9 @@ public class BaseClass {
         }
     }
 
+    /**
+     * This method reads the property file and opens he browser and navigate to the specified page
+     */
     public static void openBrowser(){
         if(!isBrowserOpened){
             if(config.getProperty("Browser").equalsIgnoreCase("IE")){
@@ -50,10 +64,14 @@ public class BaseClass {
         }
         driver.manage().window().maximize();
         driver.navigate().to(config.getProperty("URL"));
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         isBrowserOpened = true;
     }
 
+    /**
+     * This method takes the browser screen shot and embed to the scenario
+     * @param scenario
+     */
     public static void takeScreenShot(Scenario scenario){
         byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         scenario.embed(screenShot, "image/png");

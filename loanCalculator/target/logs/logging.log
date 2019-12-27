@@ -1,52 +1,54 @@
-2019-12-26 23:51:47 INFO  BaseClass:21 - ================================================================================================
-2019-12-26 23:51:47 INFO  BaseClass:22 - ============================== Scenario Name: I want to estimate how much I may be able to borrow based on my current income and existing financial commitments =============================
-2019-12-26 23:51:47 INFO  BaseClass:23 - ================================================================================================
-2019-12-26 23:53:00 INFO  BaseClass:19 - I am in borrowing calculator page
-2019-12-26 23:53:00 INFO  BaseClass:36 - Selected application type is Single
-2019-12-26 23:53:01 INFO  BaseClass:46 - Selected number of dependants is 0
-2019-12-26 23:53:01 INFO  BaseClass:52 - Selected Property you would like to buy is Home to live in
-2019-12-26 23:53:03 INFO  BaseClass:61 - Entered Income before tax is 80000
-2019-12-26 23:53:03 INFO  BaseClass:66 - Entered Other Income is 10000
-2019-12-26 23:53:04 INFO  BaseClass:81 - Entered Living expenses is 500
-2019-12-26 23:53:04 INFO  BaseClass:86 - Enter Current Home loan repayment is 0
-2019-12-26 23:53:04 INFO  BaseClass:91 - Enter Other loan repayment is 100
-2019-12-26 23:53:04 INFO  BaseClass:96 - Enter Other Commitments is 0
-2019-12-26 23:53:04 INFO  BaseClass:101 - Enter Total credit card limits is 10000
-2019-12-26 23:53:05 INFO  BaseClass:106 - Clicked on Work out Borrow button
-2019-12-26 23:53:08 ERROR BaseClass:30 - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-2019-12-26 23:53:08 ERROR BaseClass:31 - ++++++++++++++++++++++++++ Failed: Scenario Name- I want to estimate how much I may be able to borrow based on my current income and existing financial commitments++++++++++++++++++++++++++
-2019-12-26 23:53:08 ERROR BaseClass:32 - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-2019-12-26 23:53:08 INFO  BaseClass:21 - ================================================================================================
-2019-12-26 23:53:08 INFO  BaseClass:22 - ============================== Scenario Name: I want to clear all the entered loan details =============================
-2019-12-26 23:53:08 INFO  BaseClass:23 - ================================================================================================
-2019-12-26 23:53:12 INFO  BaseClass:19 - I am in borrowing calculator page
-2019-12-26 23:53:12 INFO  BaseClass:39 - Selected application type is Joint
-2019-12-26 23:53:13 INFO  BaseClass:46 - Selected number of dependants is 2
-2019-12-26 23:53:13 INFO  BaseClass:55 - Selected Property you would like to buy is Residential Investment
-2019-12-26 23:53:13 INFO  BaseClass:61 - Entered Income before tax is 80000
-2019-12-26 23:53:13 INFO  BaseClass:66 - Entered Other Income is 10000
-2019-12-26 23:53:14 INFO  BaseClass:71 - Entered joint applicant Income before tax is 80000
-2019-12-26 23:53:14 INFO  BaseClass:76 - Entered joint applicant Other Income is 10000
-2019-12-26 23:53:14 INFO  BaseClass:81 - Entered Living expenses is 500
-2019-12-26 23:53:14 INFO  BaseClass:86 - Enter Current Home loan repayment is 100
-2019-12-26 23:53:15 INFO  BaseClass:91 - Enter Other loan repayment is 100
-2019-12-26 23:53:15 INFO  BaseClass:96 - Enter Other Commitments is 100
-2019-12-26 23:53:15 INFO  BaseClass:101 - Enter Total credit card limits is 10000
-2019-12-26 23:53:16 INFO  BaseClass:106 - Clicked on Work out Borrow button
-2019-12-26 23:53:16 INFO  BaseClass:111 - Clicked on Start over button
-2019-12-26 23:53:17 INFO  BaseClass:93 - All the fields are cleared after clicking on start over button
-2019-12-26 23:53:17 INFO  BaseClass:34 - ------------------------------------------------------------------------------------------------
-2019-12-26 23:53:17 INFO  BaseClass:35 - -------------------------- Passed: Scenario Name- I want to clear all the entered loan details -------------------------
-2019-12-26 23:53:17 INFO  BaseClass:36 - ------------------------------------------------------------------------------------------------
-2019-12-26 23:53:17 INFO  BaseClass:21 - ================================================================================================
-2019-12-26 23:53:17 INFO  BaseClass:22 - ============================== Scenario Name: I want to estimate borrow by filling only living expenses and leaving all other fields as zero =============================
-2019-12-26 23:53:17 INFO  BaseClass:23 - ================================================================================================
-2019-12-26 23:53:26 INFO  BaseClass:19 - I am in borrowing calculator page
-2019-12-26 23:53:26 INFO  BaseClass:81 - Entered Living expenses is 1
-2019-12-26 23:53:26 INFO  BaseClass:106 - Clicked on Work out Borrow button
-2019-12-26 23:53:26 INFO  BaseClass:110 - Proper error message is not displayed
-2019-12-26 23:53:26 INFO  BaseClass:111 - Expected Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 100 641.
-2019-12-26 23:53:26 INFO  BaseClass:112 - Actual Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.
-2019-12-26 23:53:27 ERROR BaseClass:30 - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-2019-12-26 23:53:27 ERROR BaseClass:31 - ++++++++++++++++++++++++++ Failed: Scenario Name- I want to estimate borrow by filling only living expenses and leaving all other fields as zero++++++++++++++++++++++++++
-2019-12-26 23:53:27 ERROR BaseClass:32 - ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2019-12-27 16:51:11 INFO  BaseClass:34 - ================================================================================================
+2019-12-27 16:51:11 INFO  BaseClass:35 - ============================== Scenario Name: I want to estimate how much I may be able to borrow based on my current income and existing financial commitments =============================
+2019-12-27 16:51:11 INFO  BaseClass:36 - ================================================================================================
+2019-12-27 16:52:03 INFO  BaseClass:27 - I am in borrowing calculator page
+2019-12-27 16:52:05 INFO  BaseClass:52 - Selected application type is Single
+2019-12-27 16:52:05 INFO  BaseClass:76 - Selected number of dependants is 0
+2019-12-27 16:52:05 INFO  BaseClass:91 - Selected Property you would like to buy is Home to live in
+2019-12-27 16:52:07 INFO  BaseClass:116 - Entered Income before tax is 80000
+2019-12-27 16:52:08 INFO  BaseClass:130 - Entered Other Income is 10000
+2019-12-27 16:52:08 INFO  BaseClass:172 - Entered Living expenses is 500
+2019-12-27 16:52:08 INFO  BaseClass:186 - Enter Current Home loan repayment is 0
+2019-12-27 16:52:08 INFO  BaseClass:200 - Enter Other loan repayment is 100
+2019-12-27 16:52:09 INFO  BaseClass:214 - Enter Other Commitments is 0
+2019-12-27 16:52:09 INFO  BaseClass:228 - Enter Total credit card limits is 10000
+2019-12-27 16:52:09 INFO  BaseClass:240 - Clicked on Work out Borrow button
+2019-12-27 16:52:11 INFO  BaseClass:72 - Borrowing estimation is same as expected
+2019-12-27 16:52:11 INFO  BaseClass:73 - Expected estimation: 470000, Actual estimation: 470000
+2019-12-27 16:52:11 INFO  BaseClass:51 - ------------------------------------------------------------------------------------------------
+2019-12-27 16:52:11 INFO  BaseClass:52 - -------------------------- Passed: Scenario Name- I want to estimate how much I may be able to borrow based on my current income and existing financial commitments -------------------------
+2019-12-27 16:52:11 INFO  BaseClass:53 - ------------------------------------------------------------------------------------------------
+2019-12-27 16:52:11 INFO  BaseClass:34 - ================================================================================================
+2019-12-27 16:52:11 INFO  BaseClass:35 - ============================== Scenario Name: I want to clear all the entered loan details =============================
+2019-12-27 16:52:11 INFO  BaseClass:36 - ================================================================================================
+2019-12-27 16:52:17 INFO  BaseClass:27 - I am in borrowing calculator page
+2019-12-27 16:52:18 INFO  BaseClass:60 - Selected application type is Joint
+2019-12-27 16:52:18 INFO  BaseClass:76 - Selected number of dependants is 2
+2019-12-27 16:52:18 INFO  BaseClass:99 - Selected Property you would like to buy is Residential Investment
+2019-12-27 16:52:19 INFO  BaseClass:116 - Entered Income before tax is 80000
+2019-12-27 16:52:19 INFO  BaseClass:130 - Entered Other Income is 10000
+2019-12-27 16:52:19 INFO  BaseClass:144 - Entered joint applicant Income before tax is 80000
+2019-12-27 16:52:19 INFO  BaseClass:158 - Entered joint applicant Other Income is 10000
+2019-12-27 16:52:20 INFO  BaseClass:172 - Entered Living expenses is 500
+2019-12-27 16:52:20 INFO  BaseClass:186 - Enter Current Home loan repayment is 100
+2019-12-27 16:52:20 INFO  BaseClass:200 - Enter Other loan repayment is 100
+2019-12-27 16:52:20 INFO  BaseClass:214 - Enter Other Commitments is 100
+2019-12-27 16:52:21 INFO  BaseClass:228 - Enter Total credit card limits is 10000
+2019-12-27 16:52:21 INFO  BaseClass:240 - Clicked on Work out Borrow button
+2019-12-27 16:52:21 INFO  BaseClass:248 - Clicked on Start over button
+2019-12-27 16:52:22 INFO  BaseClass:101 - All the fields are cleared after clicking on start over button
+2019-12-27 16:52:22 INFO  BaseClass:51 - ------------------------------------------------------------------------------------------------
+2019-12-27 16:52:22 INFO  BaseClass:52 - -------------------------- Passed: Scenario Name- I want to clear all the entered loan details -------------------------
+2019-12-27 16:52:22 INFO  BaseClass:53 - ------------------------------------------------------------------------------------------------
+2019-12-27 16:52:22 INFO  BaseClass:34 - ================================================================================================
+2019-12-27 16:52:22 INFO  BaseClass:35 - ============================== Scenario Name: I want to estimate borrow by filling only living expenses and leaving all other fields as zero =============================
+2019-12-27 16:52:22 INFO  BaseClass:36 - ================================================================================================
+2019-12-27 16:52:31 INFO  BaseClass:27 - I am in borrowing calculator page
+2019-12-27 16:52:31 INFO  BaseClass:172 - Entered Living expenses is 1
+2019-12-27 16:52:31 INFO  BaseClass:240 - Clicked on Work out Borrow button
+2019-12-27 16:52:31 INFO  BaseClass:114 - Displayed proper error message
+2019-12-27 16:52:31 INFO  BaseClass:115 - Expected Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.
+2019-12-27 16:52:31 INFO  BaseClass:116 - Actual Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.
+2019-12-27 16:52:31 INFO  BaseClass:51 - ------------------------------------------------------------------------------------------------
+2019-12-27 16:52:31 INFO  BaseClass:52 - -------------------------- Passed: Scenario Name- I want to estimate borrow by filling only living expenses and leaving all other fields as zero -------------------------
+2019-12-27 16:52:31 INFO  BaseClass:53 - ------------------------------------------------------------------------------------------------

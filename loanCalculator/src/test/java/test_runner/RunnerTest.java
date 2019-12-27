@@ -1,3 +1,11 @@
+/**
+ * This is the runner class used to run scripts by providing feature and step defination file path
+ * and to generate Cucumber html and extent report
+ * @Author: Harisha M
+ * @version 1.0
+ * @Date   27-12-2019
+ */
+
 package test_runner;
 
 import baseclass.BaseClass;
@@ -27,7 +35,7 @@ import org.junit.runner.RunWith;
         "com.cucumber.listener.ExtentCucumberFormatter:target/report/Extent-report.html"},
         features = {"src/test/resources/features/"},
         glue = {"step_definations"},
-        tags = {"@Clalculate"})
+        tags = {"@Calculate"})
 
 public class RunnerTest extends BaseClass {
     @AfterSuite

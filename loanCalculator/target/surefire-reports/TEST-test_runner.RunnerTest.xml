@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test_runner.RunnerTest" time="194.275" tests="20" errors="2" skipped="0" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="test_runner.RunnerTest" time="111.19" tests="20" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_152\jre\bin"/>
@@ -63,42 +63,24 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="Given I am in borrowing calculator page" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0.002"/>
-  <testcase name="When I fill my details &quot;Single&quot; &quot;0&quot; &quot;Live&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0"/>
-  <testcase name="And I fill my earnings details &quot;80000&quot; &quot;10000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0"/>
-  <testcase name="And I fill my expenses &quot;500&quot; &quot;0&quot; &quot;100&quot; &quot;0&quot; &quot;10000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0"/>
-  <testcase name="And I click on work out borrow button" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0"/>
-  <testcase name="Then I should get borrowing estimate of &quot;479000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0.001">
-    <error message="For input string: &quot;&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: ""
-</error>
-    <system-out><![CDATA[Estimation borrow: 
-]]></system-out>
-  </testcase>
-  <testcase name="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 479000 |" time="0.001">
-    <error message="For input string: &quot;&quot;" type="java.lang.NumberFormatException">java.lang.NumberFormatException: For input string: ""
-</error>
-  </testcase>
+  <testcase name="Given I am in borrowing calculator page" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0.001"/>
+  <testcase name="When I fill my details &quot;Single&quot; &quot;0&quot; &quot;Live&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0.001"/>
+  <testcase name="And I fill my earnings details &quot;80000&quot; &quot;10000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0"/>
+  <testcase name="And I fill my expenses &quot;500&quot; &quot;0&quot; &quot;100&quot; &quot;0&quot; &quot;10000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0"/>
+  <testcase name="And I click on work out borrow button" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0"/>
+  <testcase name="Then I should get borrowing estimate of &quot;470000&quot;" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0"/>
+  <testcase name="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" classname="| Single | 0 | Live | 80000 | 10000 | 500 | 0 | 100 | 0 | 10000 | 470000 |" time="0.004"/>
   <testcase name="Given I am in borrowing calculator page" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
   <testcase name="When I fill my details &quot;Joint&quot; &quot;2&quot; &quot;Investment&quot;" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
   <testcase name="And I fill my earnings details &quot;80000&quot; &quot;10000&quot;" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
   <testcase name="And I fill my expenses &quot;500&quot; &quot;100&quot; &quot;100&quot; &quot;100&quot; &quot;10000&quot;" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
-  <testcase name="And I click on work out borrow button" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0.007"/>
+  <testcase name="And I click on work out borrow button" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
   <testcase name="And I click on start over button" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
   <testcase name="Then All the fields gets cleared" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0"/>
-  <testcase name="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0.003"/>
+  <testcase name="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" classname="| Joint | 2 | Investment | 80000 | 10000 | 500 | 100 | 100 | 100 | 10000 | 479000 |" time="0.013"/>
   <testcase name="Given I am in borrowing calculator page" classname="| 1 |" time="0"/>
   <testcase name="And I fill only living expenses &quot;1&quot;" classname="| 1 |" time="0"/>
   <testcase name="And I click on work out borrow button" classname="| 1 |" time="0"/>
-  <testcase name="Then I should not get estimation and get valid proper error message" classname="| 1 |" time="0">
-    <failure message="Proper error message is not displayed" type="java.lang.AssertionError">java.lang.AssertionError: Proper error message is not displayed
-</failure>
-    <system-out><![CDATA[2019-12-26 23:53:26 INFO  BaseClass:110 - Proper error message is not displayed
-2019-12-26 23:53:26 INFO  BaseClass:111 - Expected Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 100 641.
-2019-12-26 23:53:26 INFO  BaseClass:112 - Actual Message: Based on the details you've entered, we're unable to give you an estimate of your borrowing power with this calculator. For questions, call us on 1800 035 500.
-]]></system-out>
-  </testcase>
-  <testcase name="| 1 |" classname="| 1 |" time="0">
-    <failure message="Proper error message is not displayed" type="java.lang.AssertionError">java.lang.AssertionError: Proper error message is not displayed
-</failure>
-  </testcase>
+  <testcase name="Then I should not get estimation and get valid proper error message" classname="| 1 |" time="0"/>
+  <testcase name="| 1 |" classname="| 1 |" time="0.005"/>
 </testsuite>

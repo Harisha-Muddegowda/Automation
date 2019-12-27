@@ -1,9 +1,11 @@
-#Author: Harisha M
-#Version 1.0
+# This feature file consists of Borrowing Calculator scenarios
+# @Author: Harisha M
+# Version 1.0
 
-  @Clalculate
+  @Calculate
 Feature: Borrowing calculator
 
+  @EstimateBorrow
   Scenario Outline: I want to estimate how much I may be able to borrow based on my current income and existing financial commitments
     Given I am in borrowing calculator page
     When I fill my details "<Applicant_Type>" "<Dependants>" "<Purpose_Of_Buy>"
@@ -14,7 +16,7 @@ Feature: Borrowing calculator
 
     Examples:
     |Applicant_Type|Dependants|Purpose_Of_Buy|Income|Other_Income|Expense|Home_Loan_Repayment|Other_Loan_Payment|Commitments|CreditCard_Limit|Estimate|
-    |Single        |0         |Live          |80000 |10000      |500    |0                |100             |0           |10000          |479000        |
+    |Single        |0         |Live          |80000 |10000      |500    |0                |100             |0           |10000          |470000        |
 
   Scenario Outline: I want to clear all the entered loan details
     Given I am in borrowing calculator page

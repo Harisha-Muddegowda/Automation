@@ -3,65 +3,75 @@ formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#Author: Harisha M"
+      "value": "# This feature file consists of Borrowing Calculator scenarios"
     },
     {
       "line": 2,
-      "value": "#Version 1.0"
+      "value": "# @Author: Harisha M"
+    },
+    {
+      "line": 3,
+      "value": "# Version 1.0"
     }
   ],
-  "line": 5,
+  "line": 6,
   "name": "Borrowing calculator",
   "description": "",
   "id": "borrowing-calculator",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 4,
-      "name": "@Clalculate"
+      "line": 5,
+      "name": "@Calculate"
     }
   ]
 });
 formatter.scenarioOutline({
-  "line": 7,
+  "line": 9,
   "name": "I want to estimate how much I may be able to borrow based on my current income and existing financial commitments",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-how-much-i-may-be-able-to-borrow-based-on-my-current-income-and-existing-financial-commitments",
   "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 8,
+      "name": "@EstimateBorrow"
+    }
+  ]
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "I fill my details \"\u003cApplicant_Type\u003e\" \"\u003cDependants\u003e\" \"\u003cPurpose_Of_Buy\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "I fill my earnings details \"\u003cIncome\u003e\" \"\u003cOther_Income\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "I fill my expenses \"\u003cExpense\u003e\" \"\u003cHome_Loan_Repayment\u003e\" \"\u003cOther_Loan_Payment\u003e\" \"\u003cCommitments\u003e\" \"\u003cCreditCard_Limit\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 15,
   "name": "I should get borrowing estimate of \"\u003cEstimate\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 15,
+  "line": 17,
   "name": "",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-how-much-i-may-be-able-to-borrow-based-on-my-current-income-and-existing-financial-commitments;",
@@ -80,7 +90,7 @@ formatter.examples({
         "CreditCard_Limit",
         "Estimate"
       ],
-      "line": 16,
+      "line": 18,
       "id": "borrowing-calculator;i-want-to-estimate-how-much-i-may-be-able-to-borrow-based-on-my-current-income-and-existing-financial-commitments;;1"
     },
     {
@@ -95,20 +105,20 @@ formatter.examples({
         "100",
         "0",
         "10000",
-        "479000"
+        "470000"
       ],
-      "line": 17,
+      "line": 19,
       "id": "borrowing-calculator;i-want-to-estimate-how-much-i-may-be-able-to-borrow-based-on-my-current-income-and-existing-financial-commitments;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 306507120,
+  "duration": 46445142,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
+  "line": 19,
   "name": "I want to estimate how much I may be able to borrow based on my current income and existing financial commitments",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-how-much-i-may-be-able-to-borrow-based-on-my-current-income-and-existing-financial-commitments;;2",
@@ -116,18 +126,22 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
-      "name": "@Clalculate"
+      "line": 8,
+      "name": "@EstimateBorrow"
+    },
+    {
+      "line": 5,
+      "name": "@Calculate"
     }
   ]
 });
 formatter.step({
-  "line": 8,
+  "line": 10,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
+  "line": 11,
   "name": "I fill my details \"Single\" \"0\" \"Live\"",
   "matchedColumns": [
     0,
@@ -137,7 +151,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
+  "line": 12,
   "name": "I fill my earnings details \"80000\" \"10000\"",
   "matchedColumns": [
     3,
@@ -146,7 +160,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "I fill my expenses \"500\" \"0\" \"100\" \"0\" \"10000\"",
   "matchedColumns": [
     5,
@@ -158,13 +172,13 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
-  "name": "I should get borrowing estimate of \"479000\"",
+  "line": 15,
+  "name": "I should get borrowing estimate of \"470000\"",
   "matchedColumns": [
     10
   ],
@@ -174,7 +188,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_am_in_borrowing_calculator_page()"
 });
 formatter.result({
-  "duration": 72604034312,
+  "duration": 52353738914,
   "status": "passed"
 });
 formatter.match({
@@ -195,7 +209,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_details_something_something_something(String,int,String)"
 });
 formatter.result({
-  "duration": 1127547181,
+  "duration": 1915017721,
   "status": "passed"
 });
 formatter.match({
@@ -212,7 +226,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_earnings_details_something_something(int,int)"
 });
 formatter.result({
-  "duration": 2126644009,
+  "duration": 2489205304,
   "status": "passed"
 });
 formatter.match({
@@ -241,37 +255,35 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_expenses_something_something_something_something_something(int,int,int,int,int)"
 });
 formatter.result({
-  "duration": 1039682648,
+  "duration": 1127677807,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.i_click_on_work_out_borrow_button()"
 });
 formatter.result({
-  "duration": 157428913,
+  "duration": 245262901,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "479000",
+      "val": "470000",
       "offset": 36
     }
   ],
   "location": "CalculateBorrowing.i_should_get_borrowing_estimate_of(int)"
 });
 formatter.result({
-  "duration": 2039621866,
-  "error_message": "java.lang.NumberFormatException: For input string: \"\"\r\n\tat java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)\r\n\tat java.lang.Integer.parseInt(Integer.java:592)\r\n\tat java.lang.Integer.parseInt(Integer.java:615)\r\n\tat step_definations.CalculateBorrowing.i_should_get_borrowing_estimate_of(CalculateBorrowing.java:63)\r\n\tat ✽.Then I should get borrowing estimate of \"479000\"(borrowingCalculator.feature:13)\r\n",
-  "status": "failed"
+  "duration": 2083704157,
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 866186259,
+  "duration": 1572184,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 19,
+  "line": 21,
   "name": "I want to clear all the entered loan details",
   "description": "",
   "id": "borrowing-calculator;i-want-to-clear-all-the-entered-loan-details",
@@ -279,42 +291,42 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 20,
+  "line": 22,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "I fill my details \"\u003cApplicant_Type\u003e\" \"\u003cDependants\u003e\" \"\u003cPurpose_Of_Buy\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "I fill my earnings details \"\u003cIncome\u003e\" \"\u003cOther_Income\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "I fill my expenses \"\u003cExpense\u003e\" \"\u003cHome_Loan_Repayment\u003e\" \"\u003cOther_Loan_Payment\u003e\" \"\u003cCommitments\u003e\" \"\u003cCreditCard_Limit\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
+  "line": 27,
   "name": "I click on start over button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
+  "line": 28,
   "name": "All the fields gets cleared",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 28,
+  "line": 30,
   "name": "",
   "description": "",
   "id": "borrowing-calculator;i-want-to-clear-all-the-entered-loan-details;",
@@ -333,7 +345,7 @@ formatter.examples({
         "CreditCard_Limit",
         "Estimate"
       ],
-      "line": 29,
+      "line": 31,
       "id": "borrowing-calculator;i-want-to-clear-all-the-entered-loan-details;;1"
     },
     {
@@ -350,18 +362,18 @@ formatter.examples({
         "10000",
         "479000"
       ],
-      "line": 30,
+      "line": 32,
       "id": "borrowing-calculator;i-want-to-clear-all-the-entered-loan-details;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 2973619,
+  "duration": 1378711,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 30,
+  "line": 32,
   "name": "I want to clear all the entered loan details",
   "description": "",
   "id": "borrowing-calculator;i-want-to-clear-all-the-entered-loan-details;;2",
@@ -369,18 +381,18 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
-      "name": "@Clalculate"
+      "line": 5,
+      "name": "@Calculate"
     }
   ]
 });
 formatter.step({
-  "line": 20,
+  "line": 22,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 21,
+  "line": 23,
   "name": "I fill my details \"Joint\" \"2\" \"Investment\"",
   "matchedColumns": [
     0,
@@ -390,7 +402,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 22,
+  "line": 24,
   "name": "I fill my earnings details \"80000\" \"10000\"",
   "matchedColumns": [
     3,
@@ -399,7 +411,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 25,
   "name": "I fill my expenses \"500\" \"100\" \"100\" \"100\" \"10000\"",
   "matchedColumns": [
     5,
@@ -411,17 +423,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 24,
+  "line": 26,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 25,
+  "line": 27,
   "name": "I click on start over button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 26,
+  "line": 28,
   "name": "All the fields gets cleared",
   "keyword": "Then "
 });
@@ -429,7 +441,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_am_in_borrowing_calculator_page()"
 });
 formatter.result({
-  "duration": 4553039753,
+  "duration": 6146248245,
   "status": "passed"
 });
 formatter.match({
@@ -450,7 +462,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_details_something_something_something(String,int,String)"
 });
 formatter.result({
-  "duration": 602571258,
+  "duration": 753300603,
   "status": "passed"
 });
 formatter.match({
@@ -467,7 +479,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_earnings_details_something_something(int,int)"
 });
 formatter.result({
-  "duration": 1242661404,
+  "duration": 1231700938,
   "status": "passed"
 });
 formatter.match({
@@ -496,36 +508,36 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_my_expenses_something_something_something_something_something(int,int,int,int,int)"
 });
 formatter.result({
-  "duration": 1150810929,
+  "duration": 1099618190,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.i_click_on_work_out_borrow_button()"
 });
 formatter.result({
-  "duration": 625660364,
+  "duration": 144621271,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.i_click_on_start_over_button()"
 });
 formatter.result({
-  "duration": 315116792,
+  "duration": 237011608,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.all_the_fields_gets_cleared()"
 });
 formatter.result({
-  "duration": 1053844903,
+  "duration": 738532001,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1455349,
+  "duration": 1279406,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 32,
+  "line": 34,
   "name": "I want to estimate borrow by filling only living expenses and leaving all other fields as zero",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-borrow-by-filling-only-living-expenses-and-leaving-all-other-fields-as-zero",
@@ -533,27 +545,27 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline"
 });
 formatter.step({
-  "line": 33,
+  "line": 35,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 34,
+  "line": 36,
   "name": "I fill only living expenses \"\u003cExpense\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 37,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
+  "line": 38,
   "name": "I should not get estimation and get valid proper error message",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 38,
+  "line": 40,
   "name": "",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-borrow-by-filling-only-living-expenses-and-leaving-all-other-fields-as-zero;",
@@ -562,25 +574,25 @@ formatter.examples({
       "cells": [
         "Expense"
       ],
-      "line": 39,
+      "line": 41,
       "id": "borrowing-calculator;i-want-to-estimate-borrow-by-filling-only-living-expenses-and-leaving-all-other-fields-as-zero;;1"
     },
     {
       "cells": [
         "1"
       ],
-      "line": 40,
+      "line": 42,
       "id": "borrowing-calculator;i-want-to-estimate-borrow-by-filling-only-living-expenses-and-leaving-all-other-fields-as-zero;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1753267,
+  "duration": 2536127,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 40,
+  "line": 42,
   "name": "I want to estimate borrow by filling only living expenses and leaving all other fields as zero",
   "description": "",
   "id": "borrowing-calculator;i-want-to-estimate-borrow-by-filling-only-living-expenses-and-leaving-all-other-fields-as-zero;;2",
@@ -588,18 +600,18 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
-      "name": "@Clalculate"
+      "line": 5,
+      "name": "@Calculate"
     }
   ]
 });
 formatter.step({
-  "line": 33,
+  "line": 35,
   "name": "I am in borrowing calculator page",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 34,
+  "line": 36,
   "name": "I fill only living expenses \"1\"",
   "matchedColumns": [
     0
@@ -607,12 +619,12 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 37,
   "name": "I click on work out borrow button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 36,
+  "line": 38,
   "name": "I should not get estimation and get valid proper error message",
   "keyword": "Then "
 });
@@ -620,7 +632,7 @@ formatter.match({
   "location": "CalculateBorrowing.i_am_in_borrowing_calculator_page()"
 });
 formatter.result({
-  "duration": 8566744856,
+  "duration": 8855230199,
   "status": "passed"
 });
 formatter.match({
@@ -633,27 +645,25 @@ formatter.match({
   "location": "CalculateBorrowing.i_fill_only_living_expenses_something(int)"
 });
 formatter.result({
-  "duration": 131808784,
+  "duration": 139836233,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.i_click_on_work_out_borrow_button()"
 });
 formatter.result({
-  "duration": 150307121,
+  "duration": 160493784,
   "status": "passed"
 });
 formatter.match({
   "location": "CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message()"
 });
 formatter.result({
-  "duration": 73551607,
-  "error_message": "java.lang.AssertionError: Proper error message is not displayed\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat step_definations.CalculateBorrowing.i_should_not_get_estimation_and_get_valid_proper_error_message(CalculateBorrowing.java:113)\r\n\tat ✽.Then I should not get estimation and get valid proper error message(borrowingCalculator.feature:36)\r\n",
-  "status": "failed"
+  "duration": 62618138,
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 487172814,
+  "duration": 2271598,
   "status": "passed"
 });
 });

@@ -1,3 +1,11 @@
+/**
+ * This base class contains the scenario scripts
+ *
+ * @Author: Harisha M
+ * @version 1.0
+ * @Date   27-12-2019
+ */
+
 package step_definations;
 
 import baseclass.BaseClass;
@@ -58,15 +66,15 @@ public class CalculateBorrowing extends BaseClass {
     @Then("^I should get borrowing estimate of \"([^\"]*)\"$")
     public void i_should_get_borrowing_estimate_of(int estimate) throws Throwable {
         Thread.sleep(2000);
-        String est = driver.findElement(CalculatorPage.borrowAmount).getText();
+        String est = driver.findElement(CalculatorPage.borrowAmount).getText().replace("$","").replace(",","");
         System.out.println("Estimation borrow: "+ est);
-        if(Integer.parseInt(est.replace("$","").replace(",","")) == estimate){
+        if(Integer.parseInt(est) == estimate){
             log.info("Borrowing estimation is same as expected");
-            log.info("Expected estimation: " + estimate + " Actual estimation: "+ est);
+            log.info("Expected estimation: " + estimate + ", Actual estimation: "+ est);
         }else{
             log.info("Borrowing estimation is wrong");
-            log.info("Expected estimation: " + estimate + " Actual estimation: "+ est);
-            Assert.assertTrue("Borrowing estimation is wrong", false);
+            log.info("Expected estimation: " + estimate + ", Actual estimation: "+ est);
+            Assert.assertTrue("Borrowing estimation is wrong, Expected estimation: " + estimate + " Actual estimation: "+ est, false);
         }
     }
 
@@ -110,7 +118,7 @@ public class CalculateBorrowing extends BaseClass {
             log.info("Proper error message is not displayed");
             log.info("Expected Message: " + config.getProperty("ErrorMessage"));
             log.info("Actual Message: " + errorMsg);
-            Assert.assertTrue("Proper error message is not displayed", false);
+            Assert.assertTrue("Proper error message is not displayed, /n Expected Message: " + config.getProperty("ErrorMessage") + "/n Actual Message: " + errorMsg, false);
         }
     }
 }
