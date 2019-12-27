@@ -1,0 +1,9 @@
+			Instruction Document
+
+1. Install JDK and add “JAVA_HOME” variable with JDK path in environment variable and include “%JAVA_HOME%\bin” in path variable
+2. Download MAVEN and add “MAVEN_HOME” in environment variable and include “%MAVEN_HOME%\bin” in path variable
+3. Download workspace from GitHub “https://github.com/Harisha-Muddegowda/Automation”
+4. Open project through Intellij.
+5. Create Maven Run configuration with command line argument “verify”
+6. Run the maven configuration 
+7. Report will be generated in “src/target/report/” folder and logs will be in ““src/target/logs” folder.
