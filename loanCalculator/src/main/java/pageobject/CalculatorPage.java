@@ -35,10 +35,10 @@ public class CalculatorPage extends BaseClass {
     public static By borrowButton = By.xpath("//*[contains(@class, 'btn--borrow__calculate')]");
     public static By borrowAmount = By.className("borrow__result__text__amount");
     public static By startOverButton = By.className("start-over");
-    public static By singleApplicantRadioButton = By.xpath("//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[1]/ul/li[1]");
-    public static By jointApplicantRadioButton = By.xpath("//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[1]/ul/li[2]");
-    public static By livingPurposeRadioButton = By.xpath("//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[3]/ul/li[1]");
-    public static By investmentPurposeRadioButton = By.xpath("//*[@id='main-container']/div[1]/div/div/div[2]/div/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[3]/ul/li[2]");
+    public static By singleApplicantRadioButton = By.xpath("//*[@aria-labelledby='q1q1']/li[1]");
+    public static By jointApplicantRadioButton = By.xpath("//*[@aria-labelledby='q1q1']/li[2]");
+    public static By livingPurposeRadioButton = By.xpath("//*[@aria-labelledby='q1q3']/li[1]");
+    public static By investmentPurposeRadioButton = By.xpath("//*[@aria-labelledby='q1q3']/li[2]");
     public static By borrowErrorMessage = By.className("borrow__error__text");
 
     /**
