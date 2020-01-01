@@ -1,9 +1,16 @@
 			Instruction Document
 
-1. Install JDK and add “JAVA_HOME” variable with JDK path in environment variable and include “%JAVA_HOME%\bin” in path variable
-2. Download MAVEN and add “MAVEN_HOME” in environment variable and include “%MAVEN_HOME%\bin” in path variable
-3. Download workspace from GitHub “https://github.com/Harisha-Muddegowda/Automation”
-4. Open project through Intellij.
-5. Create Maven Run configuration with command line argument “verify”
-6. Run the maven configuration 
-7. Report will be generated in “src/target/report/” folder and logs will be in ““src/target/logs” folder.
+Step-1: 
+	Download workspace from GitHub â€œhttps://github.com/Harisha-Muddegowda/Automationâ€
+Step-2:
+	Install JDK and add â€œJAVA_HOMEâ€ variable with JDK path in environment variable and include â€œ%JAVA_HOME%\binâ€ in path variable
+Step-3: 
+	Download MAVEN and add â€œMAVEN_HOMEâ€ in environment variable and include â€œ%MAVEN_HOME%\binâ€ in path variable
+Step-4: 
+	Make sure settins.xml available in .m2 folder.
+Step-5: 
+	Open the downloaded project through Intellij.
+Step-6:
+	Run RunnerTest class (RunnerTest Class file path src/test/java/test_runner)
+Step-7:
+	After completion of execution report will be generated in â€œsrc/target/report/â€ folder and logs will be in â€œâ€œsrc/target/logsâ€ folder.
